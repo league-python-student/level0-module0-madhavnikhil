@@ -31,14 +31,35 @@ if __name__ == '__main__':
 
     # Move your turtle to a new place on the screen using .goto(x, y)
     # x=0 and y=0 is the center of the screen
+    my_Harry.goto(0, 0)
 
-    # Have your turtle draw a circle using .circle(radius, steps=30)
+
     # TEST    Did your turtle draw a circle?
-
+    my_Harry.begin_fill()
+    my_Harry.circle(20)
     # Add color to your shape by adding .begin_fill() before drawing the circle
+    my_Harry.end_fill()
     # and .end_fill() below
 
     # Draw 3 more shapes with different fill colors!
+    my_Harry.color("red")
+    my_Harry.begin_fill()
+
+    for i in range(3):
+        my_Harry.forward(100)
+        my_Harry.left(120)
+
+    my_Harry.end_fill()
+
+    my_Harry.color("blue")
+    my_Harry.begin_fill()
+
+    for i in range(5):
+        my_Harry.forward(100)
+        my_Harry.left(72)
+        my_Harry.forward(100)
+    my_Harry.end_fill()
+
 
     # ===================== DO NOT EDIT THE CODE BELOW ============================
     turtle.done()
