@@ -21,30 +21,31 @@ if __name__ == '__main__':
     flameSize = 130         # the length of the flaming arms
     
     # Make a new turtle
-    
+    my_Grizzly = turtle.Turtle()
     # Make the turtle shape 'turtle', .shape('turtle')
-    
+    my_Grizzly.shape('turtle')
     # Set the turtle width to 2
-    
+    my_Grizzly.width(2)
     # Set the turtle speed to 0 (fastest)
-    
+    my_Grizzly.speed(0)
     # Use a for loop to repeat all of the code below ONE time (we will change
     # this later)
+    for i in range(1):
         
         # Set the turtle .fillcolor() to orange
-        
+        my_Grizzly.fillcolor('orange')
         # Call the turtle .begin_fill() function
-        
+        my_Grizzly.begin_fill()
         # TURN RIGHT     Turn the turtle 1/8 of a circle (hint: 360 degrees
         #                will turn a full circle)
-        
+        my_Grizzly.right(1/8)
         # DRAW           Move the turtle 64 pixels
-        
+        my_Grizzly.forward(64)
         # TURN LEFT      Turn the turtle 40 degrees to the LEFT. (Negative
         #                numbers will turn the turtle counter-clockwise.)
-        
+        my_Grizzly.left(40)
         # DRAW FLAME     Move the turtle the distance in the variable flameSize
-        
+        my_Grizzly.left(flameSize)
         #                Turn the turtle to the right 170 degrees
          
         #                Move the turtle the distance in the variable flameSize (again)
